@@ -1,0 +1,30 @@
+<div class="max-h-screen">
+  <nav class="bg-slate-200">
+    <!-- Links -->
+    <ul
+      class="container mx-auto flex flex-row items-center h-16 gap-4 font-bold tracking-wide"
+    >
+      <li class="bg-slate-700 rounded-md text-white p-2">
+        <a routerLink="" routerLinkActive="active">Employee List</a>
+      </li>
+      <li class="bg-slate-700 rounded-md text-white p-2">
+        <a routerLink="create" routerLinkActive="active">Add Employee</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- router outlet -->
+
+  <div class="">
+    <h2 class="text-center text-3xl font-bold tracking-wide">{{ title }}</h2>
+    <hr />
+    <div class="p-4">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <footer class="">
+    <div class="">
+      <span>Ezra Muir - Payroll Practice</span>
+    </div>
+  </footer>
+</div>

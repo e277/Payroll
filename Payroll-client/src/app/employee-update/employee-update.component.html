@@ -1,0 +1,40 @@
+<h3>Update Employee</h3>
+<div style="width: 400px">
+  <form (ngSubmit)="onSubmit()">
+    <
+    <div class="">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        required
+        name="firstName"
+        [(ngModel)]="employee.firstName"
+        class=""
+      />
+    </div>
+    <div class="">
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        required
+        name="lastName"
+        [(ngModel)]="employee.lastName"
+        class=""
+      />
+    </div>
+    <div class="">
+      <label for="role">Role</label>
+      <input
+        type="text"
+        id="role"
+        required
+        name="role"
+        [(ngModel)]="employee.role"
+        class=""
+      />
+    </div>
+    <button type="submit" class="">Update</button>
+  </form>
+</div>
